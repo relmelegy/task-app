@@ -85,3 +85,19 @@ app/
 ---
 
 Feel free to contribute or customize!
+
+## 🌐 Deployment
+
+This app is deployed using GitHub Pages and Expo's static web export.
+
+To deploy a new version:
+
+```bash
+npm run deploy
+```
+
+This will:
+- Export the web app using `expo export`
+- Push the build to the `gh-pages` branch using the `gh-pages` CLI
+
+Live site: [https://relmelegy.github.io/task-app](https://relmelegy.github.io/task-app)

@@ -1,4 +1,5 @@
 {
+  "homepage": "https://relmelegy.github.io/task-app",
   "name": "task-app",
   "main": "expo-router/entry",
   "version": "1.0.0",
@@ -8,7 +9,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "predeploy": "expo export",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.1.0",
