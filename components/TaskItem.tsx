@@ -49,21 +49,26 @@ const TaskItem: React.FC<TaskItemProps> = ({
   return (
     <View style={styles.taskItem}>
       {/* Conditionally render input field or static text based on editing state */}
-      {isEditing ? (
+      {isEditing && (
         <StyledInput
           style={styles.taskInput}
           value={localText}
           onChangeText={setLocalText}
           onSubmitEditing={() => onSaveEdit(localText)}
           autoFocus
+          onKeyPress={({ nativeEvent }) => {
+            if (Platform.OS === "web" && nativeEvent.key === "Enter") {
+              onSaveEdit(localText);
+            }
+          }}
           onBlur={Platform.OS !== "web" ? () => onSaveEdit(localText) : undefined}
         />
-      ) : Platform.OS !== "web" ? (
+      )}
+
+      {!isEditing && (
         <TouchableOpacity onPress={() => onStartEdit(task.id, task.text)}>
           <Text style={styles.taskText}>{task.text}</Text>
         </TouchableOpacity>
-      ) : (
-        <Text style={styles.taskText}>{task.text}</Text>
       )}
 
       {/* Render action icons only on web platform for better UX */}
