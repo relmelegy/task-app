@@ -1,5 +1,7 @@
 # React Native Task Manager App (Expo)
 
+[![Live on Expo](https://img.shields.io/badge/Live%20Demo-Expo-blue?logo=expo)](https://task-app.expo.app)
+
 This is a simple task manager app built with **React Native** using **Expo**. It supports both web and mobile platforms with platform-specific behavior for an optimal user experience.
 
 ## 🚀 Features
