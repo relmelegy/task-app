@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+# React Native Task Manager App (Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a simple task manager app built with **React Native** using **Expo**. It supports both web and mobile platforms with platform-specific behavior for an optimal user experience.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- ✅ Add new tasks
+- ✅ Edit tasks (tap to edit on mobile, pencil icon on web)
+- ✅ Delete tasks (swipe on mobile, trash icon on web)
+- ✅ Mark tasks as completed
+- ✅ Auto-save on mobile when editing finishes
+- ✅ Enter key support for adding and saving tasks on web
+- ✅ Responsive and clean UI with gesture support
 
-   ```bash
-   npm install
-   ```
+## 📱 Platform-specific behavior
 
-2. Start the app
+| Feature             | Web               | Mobile (iOS/Android)     |
+|---------------------|-------------------|--------------------------|
+| Edit button         | Pencil icon       | Tap task text to edit    |
+| Delete button       | Trash icon        | Swipe left to delete     |
+| Save edit           | Enter key or Save | Tap away (auto-save)     |
+| Add task            | Button / Enter    | Button only              |
 
-   ```bash
-   npx expo start
-   ```
+## 🛠️ Tech Stack
 
-In the output, you'll find options to open the app in a
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.dev/)
+- [react-native-gesture-handler](https://docs.swmansion.com/react-native-gesture-handler/)
+- [@expo/vector-icons](https://docs.expo.dev/guides/icons/)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🧑‍💻 Getting Started
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+1. Clone the repo:
 
 ```bash
-npm run reset-project
+git clone https://github.com/your-username/task-app.git
+cd task-app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies:
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Start the app:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+You can run it on:
+- Web: press `w`
+- iOS Simulator: press `i`
+- Android Emulator: press `a`
+- Physical device with Expo Go app (scan QR code)
 
-Join our community of developers creating universal apps.
+## 📂 Project Structure
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```
+components/
+  ui/
+    IconButton.tsx
+    StyledInput.tsx
+    styles.ts
+  TaskItem.tsx
+app/
+  index.tsx
+  _layout.tsx
+```
+
+## 📌 Notes
+
+- Make sure to wrap the app in `GestureHandlerRootView` for swipe gestures.
+- Uses platform detection with `Platform.OS` to conditionally render UI and behavior.
+
+---
+
+Feel free to contribute or customize!
