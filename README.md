@@ -79,12 +79,9 @@ app/
 
 ## 📌 Notes
 
-- Make sure to wrap the app in `GestureHandlerRootView` for swipe gestures.
-- Uses platform detection with `Platform.OS` to conditionally render UI and behavior.
-
----
-
-Feel free to contribute or customize!
+- The app is wrapped in `GestureHandlerRootView` to enable swipe gestures on mobile.
+- Platform detection using `Platform.OS` is used to conditionally render UI and interactions for web vs. mobile.
+- Feel free to contribute or customize the project!
 
 ## 🌐 Deployment
 
