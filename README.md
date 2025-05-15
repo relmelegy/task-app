@@ -21,13 +21,6 @@ This is a simple task manager app built with **React Native** using **Expo**. It
 | Save edit           | Enter key or Save | Tap away (auto-save)     |
 | Add task            | Button / Enter    | Button only              |
 
-<!--
-## 🖼️ Screenshots
-
-| Web                 | Mobile             |
-|---------------------|--------------------|
-| ![web](screenshots/web.png) | ![mobile](screenshots/mobile.png) |
--->
 
 ## 🛠️ Tech Stack
 
