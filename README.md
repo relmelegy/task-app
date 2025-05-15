@@ -7,7 +7,7 @@ This is a simple task manager app built with **React Native** using **Expo**. It
 - ✅ Add new tasks
 - ✅ Edit tasks (tap to edit on mobile, pencil icon on web)
 - ✅ Delete tasks (swipe on mobile, trash icon on web)
-- ✅ Mark tasks as completed
+- ✅ Mark tasks as completed (toggle check icon or tap on item)
 - ✅ Auto-save on mobile when editing finishes
 - ✅ Enter key support for adding and saving tasks on web
 - ✅ Responsive and clean UI with gesture support
@@ -16,10 +16,18 @@ This is a simple task manager app built with **React Native** using **Expo**. It
 
 | Feature             | Web               | Mobile (iOS/Android)     |
 |---------------------|-------------------|--------------------------|
-| Edit button         | Pencil icon       | Tap task text to edit    |
+| Edit action         | Pencil icon       | Tap task text to edit    |
 | Delete button       | Trash icon        | Swipe left to delete     |
 | Save edit           | Enter key or Save | Tap away (auto-save)     |
 | Add task            | Button / Enter    | Button only              |
+
+<!--
+## 🖼️ Screenshots
+
+| Web                 | Mobile             |
+|---------------------|--------------------|
+| ![web](screenshots/web.png) | ![mobile](screenshots/mobile.png) |
+-->
 
 ## 🛠️ Tech Stack
 
@@ -33,7 +41,7 @@ This is a simple task manager app built with **React Native** using **Expo**. It
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/your-username/task-app.git
+git clone https://github.com/relmelegy/task-app.git
 cd task-app
 ```
 
