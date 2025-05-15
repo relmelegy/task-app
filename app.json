@@ -1,17 +1,42 @@
 {
+  "homepage": "https://relmelegy.github.io/task-app",
   "expo": {
     "name": "task-app",
     "slug": "task-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "platforms": ["ios", "android", "web"],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "scheme": "task-app",
+    "ios": {
+      "bundleIdentifier": "com.relmelegy.taskapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.relmelegy.taskapp"
+    },
     "web": {
       "output": "static"
     },
     "extra": {
       "expo-router": {
         "basePath": "/task-app"
+      },
+      "eas": {
+        "projectId": "0aa1c275-d194-4cd4-9df9-02841c76e0b8"
       }
-    }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/0aa1c275-d194-4cd4-9df9-02841c76e0b8"
+    },
+    "owner": "relmelegy"
   }
 }

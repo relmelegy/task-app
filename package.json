@@ -1,5 +1,4 @@
 {
-  "homepage": "https://relmelegy.github.io/task-app",
   "name": "task-app",
   "main": "expo-router/entry",
   "version": "1.0.0",
@@ -41,7 +40,8 @@
     "react-native-safe-area-context": "5.4.0",
     "react-native-screens": "~4.10.0",
     "react-native-web": "~0.20.0",
-    "react-native-webview": "13.13.5"
+    "react-native-webview": "13.13.5",
+    "expo-updates": "~0.28.13"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -51,5 +51,14 @@
     "gh-pages": "^6.3.0",
     "typescript": "~5.8.3"
   },
-  "private": true
+  "private": true,
+  "expo": {
+    "scheme": "task-app",
+    "ios": {
+      "bundleIdentifier": "com.relmelegy.taskapp"
+    },
+    "android": {
+      "package": "com.relmelegy.taskapp"
+    }
+  }
 }

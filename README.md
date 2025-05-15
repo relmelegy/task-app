@@ -85,16 +85,19 @@ app/
 
 ## 🌐 Deployment
 
-This app is deployed using GitHub Pages and Expo's static web export.
+This app is deployed using [Expo Hosting](https://expo.dev/).
 
 To deploy a new version:
 
 ```bash
-npm run deploy
+npx expo export --platform web
+eas deploy --platform web
 ```
 
-This will:
-- Export the web app using `expo export`
-- Push the build to the `gh-pages` branch using the `gh-pages` CLI
+To deploy to production:
 
-Live site: [https://relmelegy.github.io/task-app](https://relmelegy.github.io/task-app)
+```bash
+eas deploy --platform web --prod
+```
+
+Production URL: [https://task-app.expo.app](https://task-app.expo.app)
