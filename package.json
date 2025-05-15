@@ -11,7 +11,7 @@
     "web": "expo start --web",
     "lint": "expo lint",
     "predeploy": "expo export --platform web",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist/web"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.1.0",
